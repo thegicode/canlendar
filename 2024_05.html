@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>달력_2024년_5월</title>
+        <style>
+            :root {
+                --borer-color: #ededed;
+            }
+
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+                margin: 0;
+            }
+            .calendar {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .content {
+                flex: 1;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .title {
+                flex: none;
+
+                font-size: 2rem;
+                color: #565656;
+            }
+            .header {
+                flex: none;
+                display: flex;
+            }
+
+            .days {
+                flex: 1;
+                display: flex;
+                flex-wrap: wrap;
+
+                border-top: 1px solid var(--borer-color);
+                border-left: 1px solid var(--borer-color);
+            }
+
+            .header span {
+                flex: 1;
+
+                padding: 10px 10px 10px 0;
+                text-align: right;
+                font-size: 14px;
+                color: rgba(51, 51, 51, 0.5);
+            }
+
+            .days div {
+                flex: 1;
+                flex-basis: 14.2%;
+
+                box-sizing: border-box;
+                border-bottom: 1px solid var(--borer-color);
+                border-right: 1px solid var(--borer-color);
+
+                padding: 10px 10px 0 0;
+                text-align: right;
+                color: rgba(51, 51, 51, 0.7);
+            }
+
+            .header span:first-child {
+                color: rgba(255, 0, 0, 0.5);
+            }
+            .holiay,
+            .days div:nth-child(7n + 1) {
+                color: rgba(255, 0, 0, 0.7) !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calendar">
+            <section class="content">
+                <h2 class="title">5월</h2>
+                <div class="header">
+                    <span>일</span>
+                    <span>월</span>
+                    <span>화</span>
+                    <span>수</span>
+                    <span>목</span>
+                    <span>금</span>
+                    <span>토</span>
+                </div>
+                <div class="days">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div class="holiay">6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div class="holiay">15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>31</div>
+                    <div></div>
+            </section>
+        </div>
+    </body>
+</html>
